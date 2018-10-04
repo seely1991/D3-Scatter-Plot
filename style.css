@@ -1,0 +1,58 @@
+body {
+	font-family: helvetica;
+}
+
+svg {
+	background-color: pink;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-400px, -200px);
+}
+
+#legend {
+	height: 100px;
+	width: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(250px, 0);
+	z-index: 1;
+}
+
+#tooltip {
+	position: absolute;
+	display: none;
+	max-height: 150px;
+	max-width: 200px;
+	padding: 5px;
+	background-color: rgba(256,120,120,.7);
+	border-radius: 5px;
+	z-index: 1;
+	line-height: 16px;
+}
+
+#tooltip p {
+	padding: 0;
+	margin: 3px;
+}
+
+.legend-dot {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	opacity: .4;
+}
+
+.legend-text {
+	display: inline-block;
+}
+
+#blue {
+	background-color: blue;
+}
+
+#red {
+	background-color: red;
+}
